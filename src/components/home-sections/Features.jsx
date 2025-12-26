@@ -27,9 +27,8 @@ const FeatureData = [
 const Features = () => {
 
   return (
-    <section className=' relative overflow-hidden'>
+    <section className=' relative overflow-hidden md:mx-auto md:px-10 xl:px-0'>
       <div className='w-[70%] h-[15px] hidden lg:flex bg-light-gray absolute z-0 top-[200px] left-0'></div>
-      <div className='h-[650px] w-[15px] hidden md:flex lg:hidden bg-light-gray absolute z-0 top-0 left-[138px]'></div>
         <div className=' container pt-30 md:pt-[122px] lg:pt-40 flex flex-col gap-y-12 lg:gap-y-0 lg:flex-row items-center justify-between '>
          <FeaturePrototype imageUrl={FeatureData[0].imageUrl} alt={FeatureData[0].alt} title={FeatureData[0].title} paragraph={FeatureData[0].paragraph}/>
          <FeaturePrototype imageUrl={FeatureData[1].imageUrl} alt={FeatureData[1].alt} title={FeatureData[1].title} paragraph={FeatureData[1].paragraph}/>

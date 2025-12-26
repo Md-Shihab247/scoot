@@ -34,7 +34,7 @@ const FAQ = () => {
     let [active,setActive] = useState(0)
     let [active2,setActive2] = useState(0)
   return (
-    <section className='container pt-[145px] pb-30 md:py-30 lg:pt-30 lg:pb-40'>
+    <section className='container pt-[145px] pb-30 md:py-30 lg:pt-30 lg:pb-40 md:mx-auto md:px-10 xl:px-0'>
         <h1 className=" text-center text-[32px] md:text-5xl font-bold font-mono text-dark-navy leading-8 md:leading-12 tracking-[-1.43px] md:tracking-[-2.14px]">FAQs</h1>
        
         <div className=" my-16 flex items-center lg:items-start flex-col lg:flex-row justify-between">

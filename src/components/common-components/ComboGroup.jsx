@@ -4,9 +4,9 @@ import Image from 'next/image'
 
 const ComboGroup = ({title,paragraph,hasBtn,btnText,image,imageMask='',alt,leftToright,mobleDevice,mobileImgDirection}) => {
   return (
-    <section className=' overflow-hidden relative'>
+    <section className=' overflow-hidden relative md:mx-auto md:px-10 xl:px-0'>
 
-        <div className={` ${leftToright ? 'hidden' : '  hidden md:flex md:absolute md:top-0 md:left-0 lg:flex lg:absolute left-0'}`}>
+        <div className={` ${leftToright ? 'hidden' : '  hidden md:flex md:absolute md:top-0 md:left-0 lg:hidden xl:flex xl:absolute left-0'}`}>
             <Image src={imageMask} alt={'mask'} className={`${mobleDevice ? 'hidden' : ''}`}/>
         </div>
 
@@ -26,7 +26,7 @@ const ComboGroup = ({title,paragraph,hasBtn,btnText,image,imageMask='',alt,leftT
         <Image src={image} alt={alt} className={` lg:${leftToright ? '' : 'hidden'} w-[310px] h-[310px] lg:w-[445px] lg:h-[445px] hidden lg:flex rounded-full`}/>
        </div>
        
-        <div className={` ${leftToright ? ' hidden md:flex lg:flex md:absolute md:top-0 md:right-0 lg:absolute right-0 top-0' : 'hidden'} `}>
+        <div className={` ${leftToright ? ' hidden md:flex md:absolute md:top-0 md:right-0 lg:hidden xl:flex xl:absolute right-0 top-0' : 'hidden'} `}>
             <Image src={imageMask} alt={'mask'} className={`${mobleDevice ? 'hidden' : ''}`}/>
         </div>
     </section>
