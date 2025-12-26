@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+@utility container {
+    max-width: 1110px;
+    margin : auto
+}
+
+@theme {
+  --font-mono: "Space Mono", monospace;
+  --font-sans: "Lexend Deca", sans-serif;
+
+  --color-yellow: #FCB72B;
+  --color-dark-navy: #495567;
+  --color-dim-gray: #939CAA;
+  --color-light-gray: #E5ECF4;
+
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+}
