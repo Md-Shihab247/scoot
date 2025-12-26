@@ -29,7 +29,7 @@ const Navbar = () => {
   return (
     <div className=" lg:relative">
       
-      <nav className=" relative lg:container py-5.5 flex justify-center md:justify-between md:px-10 xl:px-0 md:mx-auto  lg:justify-between items-center">
+      <nav className=" relative bg-white lg:container py-5.5 flex justify-center md:justify-between md:px-10 xl:px-0 md:mx-auto  lg:justify-between items-center z-50">
       <div className=" flex items-center gap-x-14.5 ">
         <div className=" absolute left-5 top-[30px]">
         <Image onClick={()=> setMenu(true)} src={menuIcon} alt="menu" className={`${menu ? 'hidden' : 'block'} md:hidden lg:hidden`}/>
@@ -56,7 +56,7 @@ const Navbar = () => {
         </div>
     </nav>
 
-    <div className={`${menu ? ' left-0' : ' -left-full'} transition-all duration-300 ease-in-out z-50 absolute top-[73px] lg:hidden`}>
+    <div className={`${menu ? ' left-0' : ' -left-full'} transition-all duration-300 ease-in-out z-20 absolute top-0 lg:hidden`}>
       <Sidebar/>
     </div>
     </div>

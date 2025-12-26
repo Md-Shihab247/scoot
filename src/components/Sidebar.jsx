@@ -18,7 +18,7 @@ let navigation = [
 const Sidebar = () => {
   return (
     <div className=" lg:hidden h-screen w-[256px] px-5 bg-[#333A44]">
-        <ul className=" pt-16 flex flex-col gap-6 text-light-gray font-mono font-bold text-[18px] leading-6.25">
+        <ul className=" pt-26.25 flex flex-col gap-6 text-light-gray font-mono font-bold text-[18px] leading-6.25">
             {
              navigation.map((item, index) => (
                 <li key={index}>
@@ -28,7 +28,7 @@ const Sidebar = () => {
             }
            
         </ul>
-        <div className=" relative top-[340px] flex justify-center">
+        <div className=" relative top-[265px] flex justify-center">
           <Button text={'Get Scootin'}/>
         </div>
     </div>
